@@ -320,7 +320,7 @@
     overflow:hidden;
       left: 50%;
         transform: translate(-50%);
-    bottom:20px;
+    bottom:200px;
   }
 
   #cake {
@@ -396,8 +396,8 @@
 
   @keyframes fuego {
   0%, 100% {
-  background: rgba(254, 248, 97, 0.5);
-  box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+  background: rgba(254, 80, 31, 0.5);
+  box-shadow: 0 0 40px 10px rgba(255, 248, 214, 0.96);
   transform: translateY(0) scale(1);
   }
   50% {
@@ -492,20 +492,20 @@
   }
 
   .all {
-    top: 28.5rem;
+    top: 14.5rem;
     left: calc(50% - 2.5rem);
     position: absolute;
     width: 5rem;
     height: 5rem;
-    transform-origin: center -20rem;
+    transform-origin: center -6rem;
     animation: swing $duration $easing infinite both;
 
   &:before {
-     height: 20rem;
+     height: 6rem;
      width: 2px;
      background-color: $color-yarn;
      left: calc(50% - 1px);
-     bottom: 20rem;
+     bottom: 6rem;
    }
   }
 
