@@ -3,6 +3,16 @@
     <img class="bearLeft" src="../assets/pics/bear1.png"/>
     <img class="bearRight" src="../assets/pics/bear2.png"/>
     <img class="happy" src="../assets/pics/happy.png"/>
+    <div class="minui">
+      <div class="text" v-for="item in textcount">
+        夏
+      </div>
+    </div>
+    <div class="minui2">
+      <div class="text" v-for="item in textcount">
+        敏
+      </div>
+    </div>
     <div class="cakewrap">
       <div class="velas">
         <div class="fuego"></div>
@@ -287,7 +297,14 @@
       </div>
     </div></div>
   </div>
-  </div>
+      <!--<canvas id="canvas"></canvas>-->
+      <!--<div id="shaker">-->
+        <!--&lt;!&ndash;     <div class="copy" id="tada">🎉</div> &ndash;&gt;-->
+        <!--<div class="tada" id="tada">-->
+          <!--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/62921/party-popper.png" alt="" />-->
+        <!--</div>-->
+      <!--</div>-->
+      </div>
 </template>
 <style scoped>
   .back{
@@ -949,3 +966,17 @@
     display: block;
   }
 </style>
+<style scoped lang="scss">
+  @import "../assets/scss/flashtext.scss";
+</style>
+<script>
+  export default {
+      data(){return{
+          textcount:60,
+      }},
+    mounted()
+    {
+//        eliinit();
+    }
+  }
+</script>
